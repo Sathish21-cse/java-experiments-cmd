@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body, #root { background: #050505; min-height: 100%; }
+body { font-family: 'Cascadia Mono', Consolas, 'Courier New', monospace; font-size: 14px; color: #d4d4d4; }
+.cursor { display: inline-block; width: .6em; height: 1em; background: #c0c0c0; vertical-align: text-bottom; animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
+::selection { background: #264f78; }
+* { scrollbar-width: thin; scrollbar-color: #444 #050505; }
+.tk-c { color: #6a9955; } .tk-s { color: #ce9178; } .tk-k { color: #569cd6; } .tk-n { color: #b5cea8; }
